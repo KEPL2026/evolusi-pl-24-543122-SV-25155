@@ -32,6 +32,7 @@ class BmiController extends Controller
     public function hitungBmi(float $beratKg, float $tinggiCm): float
     {
         $tinggiM = $tinggiCm / 100;
+
         return round($beratKg / ($tinggiM * $tinggiM), 2);
     }
 
